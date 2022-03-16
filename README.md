@@ -1,0 +1,1 @@
+# szemin-ng.github.io
