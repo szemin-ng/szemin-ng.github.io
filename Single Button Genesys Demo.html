@@ -32,7 +32,7 @@
     let email = urlParams.get('email');
     let autoDial = urlParams.get('autoDial');
     let debugMode = urlParams.get('debug');
-    let enableChat = urlParams.get('enableChat');
+    let enableChat = true //urlParams.get('enableChat');
 
     if (!firstname) {
         firstname = 'videoengager.github.io'
@@ -110,14 +110,14 @@
           webchat: {
                 transport: {
                     type: 'purecloud-v2-sockets',
-                    dataURL: 'https://api.mypurecloud.com',
-                    deploymentKey: '973f8326-c601-40c6-82ce-b87e6dafef1c',
-                    orgGuid: 'c4b553c3-ee42-4846-aeb1-f0da3d85058e',
+                    dataURL: 'https://api.mypurecloud.com.au',
+                    deploymentKey: '35cb049e-6443-41fe-afb4-2897dc9f2e88',
+                    orgGuid: 'ab560fec-a07e-4e8c-bba6-c68539f42b0e',
                     markdown: true,
                     interactionData: {
                         routing: {
                                 targetType: 'QUEUE',
-                                targetAddress: 'TestQueue',
+                                targetAddress: 'SM_Inbound',
                                 priority: 2
                         }
                         }
